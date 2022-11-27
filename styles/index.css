@@ -100,8 +100,11 @@
 .book-now{
     background: #d98600 !important;
     cursor: pointer;
-    color: #fff;
     transition: all .4s;
+}
+.book-now a{
+    color: #fff;
+    text-decoration: none;
 }
 .book-now:hover{
     background: #222 !important;

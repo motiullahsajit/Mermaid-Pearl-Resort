@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/room_details.css">
     <title>Deluxe Room</title>
 </head>
 <body>
@@ -23,46 +24,147 @@
             <a class="contact">REGISTER</a>
         </div>
     </header>
+
     <nav class="navbar d-flex-between">
         <div>
-            <a href="" class="name">Mermaid</a><br>
-            <a href="" class="name-bottom">Pearl Resort</a>
+            <a href="/" class="name">Mermaid</a><br>
+            <a href="/" class="name-bottom">Pearl Resort</a>
         </div>
         <div class="menu-options">
-            <a href="">HOME</a>
-            <a href="">ROOMS</a>
-            <a href="">ABOUT US</a>
-            <a href="">OUR SERVICES</a>
-            <a href="" class="booking-btn">BOOK NOW</a>
+            <a href="/">HOME</a>
+            <a href="/">ROOMS</a>
+            <a href="/">ABOUT US</a>
+            <a href="../sevice_booking.html">OUR SERVICES</a>
+            <a href="../room_booking.html" class="booking-btn">BOOK NOW</a>
         </div>
     </nav>
-    <section class="hero">
-        <div class="booking-area">
-            <div>
-                <p><i class="fa-regular fa-calendar-days"></i> Check In</p>
-                <input type="date">
+
+    <section class="room-hero">
+       <h1>Deluxe Room</h1>
+    </section>
+
+    <section class="room-details">
+        <div class="room-details-container">
+            <div class="room-info">
+                <div>
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                          <div class="numbertext">1 / 3</div>
+                          <img src="../images/deluxe/deluxe-room.jpg" style="width:100%">
+                        </div>
+                        <div class="mySlides fade">
+                          <div class="numbertext">1 / 3</div>
+                          <img src="../images/deluxe/gallery-01.jpg" style="width:100%">
+                        </div>
+                        
+                        <div class="mySlides fade">
+                          <div class="numbertext">2 / 3</div>
+                          <img src="../images/deluxe/gallery-02.jpg" style="width:100%">
+                        </div>
+                        
+                        <div class="mySlides fade">
+                          <div class="numbertext">3 / 3</div>
+                          <img src="../images/deluxe/gallery-03.jpg" style="width:100%">
+                        </div>
+    
+                        <div class="mySlides fade">
+                            <div class="numbertext">3 / 3</div>
+                            <img src="../images/deluxe/gallery-04.jpg" style="width:100%">
+                          </div>
+                        
+                        <a class="prev" onclick="plusSlides(-1)">❮</a>
+                        <a class="next" onclick="plusSlides(1)">❯</a>   
+                    </div>
+    
+                    <div class="gallery-images">
+                        <img src="../images/deluxe/gallery-01.jpg" alt="" >
+                        <img src="../images/deluxe/gallery-02.jpg" alt="" >
+                        <img src="../images/deluxe/gallery-03.jpg" alt="" >
+                        <img src="../images/deluxe/gallery-04.jpg" alt="" >
+                    </div>
+
+                </div>
+                <div class="overview">
+                    <h1>Overview</h1>
+                    <p>Our Deluxe Room offers a stunning view of the white sand beach. This room is designed and decorated with modern style and equipped with the most luxurious facilites. Little luxuries include free Wi-Fi, deluxe bath amenities and a 4K technology flat-screen television with cable channels.</p>
+                </div>
+                <div class="amenities-container">
+                    <h1>Free Amenities</h1>
+                    <div class="amenities">
+                        <div><i class="fa-solid fa-temperature-low"></i><p>Air Conditioner</p></div>
+                        <div><i class="fa-solid fa-tv"></i><p>Big TV</p></div>
+                        <div><i class="fa-solid fa-wifi"></i><p>Wifi</p></div>
+                        <div><i class="fa-solid fa-key"></i><p>Door Key</p></div>
+                    </div>
+                    <div class="amenities">
+                        <div><i class="fa-solid fa-mug-saucer"></i><p>Coffee Maker</p></div>
+                        <div><i class="fa-solid fa-box-tissue"></i><p>Tissue Box</p></div>
+                        <div><i class="fa-solid fa-car"></i><p>Free Car Wash</p></div>
+                        <div><i class="fa-solid fa-square-parking"></i><p>Free Parking</p></div>
+                    </div>
+                </div>
             </div>
-            <div>
-                <p><i class="fa-regular fa-calendar-days"></i> Check Out</p>
-                <input type="date">
-            </div>
-            <div>
-                <p><i class="fa-solid fa-users"></i> Guests</p>
-                <input type="number" value="3">
-            </div>
-            <div>
-                <p><i class="fa-solid fa-bed"></i> Beds</p>
-                <input type="number" value="2">
-            </div>
-            <div>
-                <p><i class="fa-solid fa-bath"></i> Baths</p>
-                <input type="number" value="1">
-            </div>
-            <div class="book-now">
-                <p><i class="fa-sharp fa-solid fa-magnifying-glass"></i> Search</p>
+            <div class="booking-form">
+                <div class="booking-form-inside">
+                    <form action="">
+                    <h1 class="booking-head color-primary">BOOKING</h1>
+                    <p>Name</p>
+                    <input class="margin-bottom" type="text" required>
+                    <p>Phone</p>
+                    <input class="margin-bottom" type="number" required>
+                    <p>Email</p>
+                    <input class="margin-bottom" type="text" required>
+                    <div class="form-inputs margin-bottom">
+                        <div><p>Check in </p><input type="date" name="" id="" required></div>
+                        <div><p>Check Out</p> <input type="date" name="" id="" required></div>
+                    </div>
+                    <div class="form-inputs margin-bottom">
+                        <div><p>Guests</p> <input type="number" name="" id="" required></div>
+                        <div><p>Rooms</p><input type="number" name="" id=" required"></div>
+                    </div>
+                    <div class="margin-bottom">
+                        <label for="service">Extra Service</label>
+                        <select name="service" id="service" class="extra-service">
+                            <option value="wifi">Strong Wifi</option>
+                            <option value="pool">Personal Pool</option>
+                            <option value="cleaning">Room Cleaning</option>
+                            <option value="gym">Gym</option>
+                        </select>
+                    </div>
+                    <input class="book-btn" onclick="confirm()" type="submit" value="BOOK NOW">
+                </form>
+                </div>
             </div>
         </div>
     </section>
+    
+    <section class="rooms room-sugg-bg">
+        <div class="rooms-container">
+        <h1 class="room-sugg-heading">YOU MAY LIKE</h1>
+        <div class="d-flex-between">
+             <div class="room">
+                 <img src="../images/royal suite/room01.jpg" alt="deluxe room">
+                 <p class="room-price">From <span class="color-primary">BDT 18000/night</span></p>
+                 <a href="../rooms/royal_suite.html"><h2>Royal Suite</h2></a>
+                 <p><i class="fa-solid fa-bed"></i> 1 <i class="fa-solid fa-house"></i> 70 Sqm</p>
+                 <a href="../rooms/royal_suite.html">BOOK NOW <i class="fa-solid fa-caret-right"></i></a>
+             </div>
+             <div class="room">
+                 <img src="../images/executive suite/room10.jpg" alt="deluxe room">
+                 <p class="room-price">From <span class="color-primary">BDT 15000/night</span></p>
+                 <a href="../rooms/executive_suite.html"><h2>Executive Suite</h2></a>
+                 <p><i class="fa-solid fa-bed"></i> 2 <i class="fa-solid fa-house"></i> 48 Sqm</p>
+                 <a href="../rooms/executive_suite.html">BOOK NOW <i class="fa-solid fa-caret-right"></i></a>
+             </div>
+             <div class="room">
+                <img src="../images/presidiential suite/room05.jpg" alt="deluxe room">
+                <p class="room-price">From <span class="color-primary">BDT 20000/night</span></p>
+                <a href="../rooms/presidential_suite.html"><h2>Presidential Suite</h2></a>
+                <p><i class="fa-solid fa-bed"></i> 2 <i class="fa-solid fa-house"></i> 100 Sqm</p>
+                <a href="../rooms/presidential_suite.html">BOOK NOW <i class="fa-solid fa-caret-right"></i></a>
+            </div>
+        </div>
+     </section>
    
     <footer>
         <div class="footer-details">
@@ -110,4 +212,36 @@
         </div>
     </footer>
 </body>
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    function confirm() {
+        alert("Congratulations! Your booking is confirmed!");
+        window.location.replace("/");
+    }
+    </script>
 </html>
